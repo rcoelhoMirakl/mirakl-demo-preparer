@@ -91,7 +91,7 @@ function App() {
       <div>
         <label>
           Environment:
-          <input type="text" value={environment} onChange={(e) => setEnvironment(e.target.value)} placeholder="e.g., demo, prod" />
+          <input type="text" value={environment} onChange={(e) => setEnvironment(e.target.value)} placeholder="e.g., demo" />
         </label>
       </div>
       <div>
