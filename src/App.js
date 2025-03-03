@@ -15,7 +15,7 @@ function App() {
       return;
     }
 
-    const apiUrl = `https://${environment}.mirakl.net/api`;
+    const apiUrl = 'http://localhost:3001/api';  // Using the proxy server
 
     try {
       const [categoriesRes, valueListsRes, attributesRes] = await Promise.all([
@@ -30,7 +30,6 @@ function App() {
         }),
       ]);
 
-      // Assuming the data structure returned is an array of objects
       setCategories(categoriesRes.data);
       setValueLists(valueListsRes.data);
       setAttributes(attributesRes.data);
